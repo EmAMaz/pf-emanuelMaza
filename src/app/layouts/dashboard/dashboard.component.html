@@ -1,0 +1,24 @@
+
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+      <h2 class="title">Alumni Admin</h2>
+      <ul class="ctner__list">
+        <li (click)="cambiarNombreSeccion($event)">Alumnos</li>
+        <li (click)="cambiarNombreSeccion($event)">Profesores</li>
+      </ul>
+    </mat-drawer>
+  
+    <div class="example-sidenav-content">
+        <div class="mat-toolbar">
+            <mat-toolbar>
+              <span class="title">{{nombreSeccion}}</span>
+            </mat-toolbar>
+        </div>
+      <button type="button" class="btn__toggle" mat-button (click)="drawer.toggle()">
+        
+      </button>
+      
+    </div>
+  
+</mat-drawer-container>
+  
